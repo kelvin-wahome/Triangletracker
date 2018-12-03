@@ -1,20 +1,24 @@
-function triangleType(){
-  var a = parseInt (document.getElementById('length1').value);
-  var b = parseInt (document.getElementById('length2').value);
-  var c = parseInt (document.getElementById('length3').value);
-  var result = document.getElementById('result')
-
-  if(length1===length2 && length2===length3){
-    document.getElementById('This is an Equilateral triangle')
-
+function triangType(){
+  var a = parseInt (document.getElementById('a').value);
+  var b = parseInt (document.getElementById('b').value);
+  var c = parseInt (document.getElementById('c').value);
+var sides=[];
+sides.push (a, b, c);
+var d = sides [0];
+var e = sides [1];
+var f = sides [2];
+  if(d===e && e===f && d===f){
+    alert("Equilateral Triangle");
   }
-   else if(lenth1!== length2 && length2=== length3){
-     document.getElementById("This is an Isosceles triangle")
+
+  else if( d==e || e==f || d==f ){
+    alert("Isosceles");
+  }
+   else if ( d!==e && d!==f && e!==f){
+     alert("Scalene")
    }
-
-   else if (length1!==length2 && length2!==length3 && length1!==length3){
-     document.getElementById("This is a Scalene triangle")
-
+   else{
+     alert("Not a triangle");
    }
 
 }
