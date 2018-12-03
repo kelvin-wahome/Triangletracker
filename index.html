@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>Triangle Tracker</title>
-  <script type="text/javascript" src="js/script.js"></script>
 
-  </script>
+
+
 </head>
 
 
@@ -20,33 +20,24 @@
   </div>
 
   <form id="blanks">
-    <div class="form-group">
-      <label for="number">Enter lenth</label>
-      <input id="length1" class="form-control" type="text">
-    </div>
+      <label for="length1">Enter length1</label>
+      <input id="a"  type="number">
 
-    <div class="form-group">
-      <label for="anotherlength"> Enter length2</label>
-      <input id="length2" class="form-control" type="text">
+      <label for="length2"> Enter length2</label>
+      <input id="b"  type="number">
 
-    </div>
-
-    <div class="form-group">
-      <label for="anotherlength"> Enter length3</label>
-      <input id="length3" class="form-control" type="text">
-
-    </div>
-
-    <button id="submit"type="submit" onclick="triangleType()" name="button">Submit</button>
+      <label for="length3"> Enter length3</label>
+      <input id="c"  type="number">
 
 
-
+    <button type="button" onclick="triangType()">Submit</button>
+    <p id="result"></p>
   </form>
 
 
 
 
-
+<script src="js/script.js"></script>
 </body>
 
 </html>
