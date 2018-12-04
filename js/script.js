@@ -17,8 +17,19 @@ var f = sides [2];
    else if ( d!==e && d!==f && e!==f){
      alert("Scalene")
    }
-   else{
+   else if ( d+e>=f || d+f>=e || e+f>=d){
      alert("Not a triangle");
+
    }
+    else{
+      alert("Invalid");
+    }
+
+
+
+
+
+
+
 
 }
